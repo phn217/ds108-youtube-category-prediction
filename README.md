@@ -112,7 +112,7 @@ Quy trình thực hiện được đề xuất theo thứ tự sau:
 ## TÀI LIỆU BỔ SUNG & TÀI NGUYÊN
 
 **1. Từ điển Dữ liệu (Data Dictionary)**
-Thông tin chi tiết về định nghĩa, kiểu dữ liệu, miền giá trị quét thực tế từ file và vai trò xử lý toán học của từng cột trong mô hình, vui lòng tra cứu chi tiết tại file [CODE_BOOK.md](./CODE_BOOK.md).
+Thông tin chi tiết về định nghĩa, kiểu dữ liệu, miền giá trị quét thực tế từ dữ liệu đã làm sạch và vai trò xử lý toán học của từng cột trong mô hình, vui lòng tra cứu chi tiết tại file [CODE_BOOK.md](./CODE_BOOK.md).
 
 **2. Tập Dữ liệu (Dataset)**
 Toàn bộ dữ liệu thô (raw data) được thu thập tự động từ YouTube Data API v3 đã được nhóm đóng gói và công bố công khai trên nền tảng Kaggle. Việc này giúp đảm bảo tính minh bạch của số liệu và hỗ trợ cộng đồng dễ dàng tái sử dụng (reproduce) lại toàn bộ quy trình Data Pipeline của dự án.
