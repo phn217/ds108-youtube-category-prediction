@@ -1,0 +1,16 @@
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+
+scikit-learn
+category-encoders
+lightgbm
+
+tqdm
+isodate
+
+python-dotenv
+google-api-python-client
+groq
