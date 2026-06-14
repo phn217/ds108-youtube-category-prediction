@@ -11,11 +11,13 @@
 **Dự án được xây dựng trong khuôn khổ môn học Tiền xử lý và xây dựng bộ dữ liệu (DS108) - Thu thập dữ liệu video Youtube Trending và Tiền xử lý phục vụ bài toán dự đoán danh mục dựa trên dữ liệu tương tác.**
 
 
-Dự án này tập trung vào việc giải quyết bài toán phân loại đa lớp (Multiclass Classification) trên tập dữ liệu mất cân bằng nghiêm trọng, với điểm nhấn đặc biệt ở giai đoạn Tiền xử lý: Sử dụng Hybrid GenAI (Llama-3 8B Instant) & NLP để nội suy dữ liệu khuyết thiếu và MICE để bảo toàn phân phối gốc.
+Dự án tập trung giải quyết bài toán phân loại đa lớp (Multiclass Classification) trên tập dữ liệu có mức độ mất cân bằng nghiêm trọng, với trọng tâm nằm ở giai đoạn tiền xử lý dữ liệu. Dự án áp dụng phương pháp Hybrid GenAI (Llama-3.1-8B-Instant thông qua Groq API) kết hợp NLP để bổ sung thông tin khuyết thiếu ở thuộc tính tags, đồng thời sử dụng các kỹ thuật xử lý missing data nhằm duy trì tính nhất quán của dữ liệu.
 
 
-* **Mục tiêu:** Xây dựng hệ thống phân loại danh mục tự động đạt hiệu năng cao, giải quyết triệt để bài toán mất cân bằng dữ liệu (Class Imbalance).
-* **Kết quả dự kiến:** Mô hình dự đoán danh mục chính xác, giảm thiểu hiện tượng học vẹt (Shortcut Learning) thông qua kỹ thuật Target Encoding đồng cấp.
+
+* **Mục tiêu:** Xây dựng hệ thống dự đoán danh mục video dựa trên các đặc trưng nội dung và tương tác, đồng thời xử lý hiệu quả các vấn đề về dữ liệu khuyết thiếu và mất cân bằng lớp (Class Imbalance).
+
+* **Kết quả hướng đến:** Xây dựng mô hình phân loại có khả năng tổng quát tốt, hạn chế hiện tượng học các đặc trưng không mang tính đại diện (Shortcut Learning) thông qua các kỹ thuật xử lý đặc trưng phù hợp như Target Encoding.
 
 ---
 
@@ -115,6 +117,6 @@ Quy trình thực hiện được đề xuất theo thứ tự sau:
 Thông tin chi tiết về định nghĩa, kiểu dữ liệu, miền giá trị quét thực tế từ dữ liệu đã làm sạch và vai trò xử lý toán học của từng cột trong mô hình, vui lòng tra cứu chi tiết tại file [CODE_BOOK.md](./CODE_BOOK.md).
 
 **2. Tập Dữ liệu (Dataset)**
-Toàn bộ dữ liệu thô (raw data) được thu thập tự động từ YouTube Data API v3 đã được đóng gói và công bố công khai trên nền tảng Kaggle. Bên cạnh đó, bộ dữ liệu cũng bao gồm phiên bản đã qua quá trình tiền xử lý (cleaned data) nhằm phục vụ cho các bước phân tích khám phá dữ liệu (EDA) và xây dựng mô hình học máy. Việc này giúp đảm bảo tính minh bạch của số liệu và hỗ trợ cộng đồng dễ dàng tái sử dụng (reproduce) lại toàn bộ quy trình Data Pipeline của dự án.
+Toàn bộ dữ liệu thô (raw data) được thu thập tự động từ YouTube Data API v3 đã được đóng gói và công bố công khai trên nền tảng Kaggle. Bên cạnh đó, bộ dữ liệu cũng bao gồm phiên bản đã qua quá trình tiền xử lý (cleaned data) nhằm phục vụ cho các bước phân tích khám phá dữ liệu (EDA) và xây dựng mô hình học máy. Việc này giúp đảm bảo tính minh bạch của số liệu và hỗ trợ cộng đồng dễ dàng tái hiện (reproduce) lại toàn bộ quy trình Data Pipeline của dự án.
 
 Truy cập Dataset chính thức trên Kaggle **[tại đây](https://www.kaggle.com/datasets/phn217/ds-raw)**
