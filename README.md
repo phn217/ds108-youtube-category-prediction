@@ -115,6 +115,6 @@ Quy trình thực hiện được đề xuất theo thứ tự sau:
 Thông tin chi tiết về định nghĩa, kiểu dữ liệu, miền giá trị quét thực tế từ dữ liệu đã làm sạch và vai trò xử lý toán học của từng cột trong mô hình, vui lòng tra cứu chi tiết tại file [CODE_BOOK.md](./CODE_BOOK.md).
 
 **2. Tập Dữ liệu (Dataset)**
-Toàn bộ dữ liệu thô (raw data) được thu thập tự động từ YouTube Data API v3 đã được nhóm đóng gói và công bố công khai trên nền tảng Kaggle. Việc này giúp đảm bảo tính minh bạch của số liệu và hỗ trợ cộng đồng dễ dàng tái sử dụng (reproduce) lại toàn bộ quy trình Data Pipeline của dự án.
+Toàn bộ dữ liệu thô (raw data) được thu thập tự động từ YouTube Data API v3 đã được đóng gói và công bố công khai trên nền tảng Kaggle. Bên cạnh đó, bộ dữ liệu cũng bao gồm phiên bản đã qua quá trình tiền xử lý (cleaned data) nhằm phục vụ cho các bước phân tích khám phá dữ liệu (EDA) và xây dựng mô hình học máy. Việc này giúp đảm bảo tính minh bạch của số liệu và hỗ trợ cộng đồng dễ dàng tái sử dụng (reproduce) lại toàn bộ quy trình Data Pipeline của dự án.
 
-Truy cập Dataset chính thức của nhóm trên Kaggle **[tại đây](https://www.kaggle.com/datasets/phn217/ds-raw)**
+Truy cập Dataset chính thức trên Kaggle **[tại đây](https://www.kaggle.com/datasets/phn217/ds-raw)**
