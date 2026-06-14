@@ -1,7 +1,7 @@
 # YOUTUBE TRENDING CATEGORY PREDICTION
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![YouTube API v3](https://img.shields.io/badge/YouTube-Data_API_v3-red.svg)](https://developers.google.com/youtube/v3)
-[![Groq API](https://img.shields.io/badge/GenAI-Llama--3_8B_Instant-green.svg)](https://groq.com/)
+[![Groq API](https://img.shields.io/badge/GenAI-Llama--3.1_8B_Instant-green.svg)](https://groq.com/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2+-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -33,7 +33,7 @@ Luồng xử lý dữ liệu được thiết kế tuần tự, đảm bảo tí
       │           Cô lập hoàn toàn tập Train và tập Test ngay từ đầu.
       │
       ├──> 2. Điền khuyết dữ liệu 
-      │      ├──> Biến văn bản: Gọi Groq API (Llama-3 8B Instant) nội suy ngữ nghĩa cho cột tags
+      │      ├──> Biến văn bản: Gọi Groq API (Llama-3.1 8B Instant) nội suy ngữ nghĩa cho cột tags
       │      └──> Biến số (Chiến lược 2 giai đoạn):
       │           ├─ Stage 1: Điền Category Median cho nhóm lỗi hệ thống (sub=0)
       │           └─ Stage 2: Kích hoạt MICE (ExtraTrees) điền khuyết tự nhiên (MCAR)
